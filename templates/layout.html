@@ -7,10 +7,10 @@
     </title>
 </head>
 <body>
-    <a href="url_for('index')">Home</a> | 
-    <a href="url_for('about')">About</a> | 
-    <a href="url_for('favorite_foods')">Favorite Foods</a> |
-    <a href="url_for('sports')">Sports</a> |
+    <a href="{{url_for('home')}}">Home</a> | 
+    <a href="{{url_for('about')}}">About</a> | 
+    <a href="{{url_for('favorite_foods')}}">Favorite Foods</a> |
+    <a href="{{url_for('sports')}}">Sports</a>
     <br>
     {% block content %}  {% endblock %}
     
