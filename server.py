@@ -41,3 +41,11 @@ def greeting(username):
     return render_template('welcome.html',
                            title=title,
                            username=username)
+
+@app.route('/movie>')
+def movie():
+    title='Favorite Movies'
+    movies = ['Inception', 'The Matrix', 'Interstellar', 'The Dark Knight']
+    return render_template('fav_movie.html',
+                           title=title,
+                           movies=movies)
